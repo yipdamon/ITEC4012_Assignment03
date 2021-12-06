@@ -13,11 +13,11 @@ export const Navbar = () => {
                         Homepage
                     </NavLink> 
                 </li>
-                <li>
+                {/* <li>
                     <NavLink activeClassName='nav-selected' to="/new" >
                         New Page
                     </NavLink>
-                </li>
+                </li> */}
             </ul>
         </nav>
     )
