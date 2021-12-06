@@ -10,14 +10,9 @@ export const Navbar = () => {
             <ul className="navbar-list">
                 <li>
                     <NavLink exact={true} activeClassName="nav-selected" to="/">
-                        Damon's Phone Store
+                        Phone Store
                     </NavLink> 
                 </li>
-                {/* <li>
-                    <NavLink activeClassName='nav-selected' to="/new" >
-                        New Page
-                    </NavLink>
-                </li> */}
             </ul>
         </nav>
     )

@@ -5,7 +5,7 @@ import { useContext } from 'react';
 
 export const PhoneItem = (props) => {
 
-    const {name, image, os, year, color, brand, price, id} = props;
+    const {name, image, os, year, color, brand, price, id, details} = props;
 
     const globalState = useContext(PhonesOrderContext);
 
@@ -22,6 +22,7 @@ export const PhoneItem = (props) => {
             <p className="phone-price"> {price} </p>
             <p className="phone-brand"> {brand} </p>
             <p className="phone-year"> {year} </p>
+            <p hidden> {details} </p>
 
             {/* <Button text="Request Phone" type="primary" isDisabled={false} action={addPhoneToCart} /> */}
         

@@ -76,7 +76,7 @@ const getPhones = async() => {
 
   return (
     <div className="phones-page">
-      <h1 className="phones-title"> All Phones </h1>
+      <h1 className="phones-title"> </h1>
       <Search handleSearchUpdate={handleSearchUpdate} />
       <div className="phones-container">
       {

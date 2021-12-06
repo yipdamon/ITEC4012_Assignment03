@@ -20,9 +20,6 @@ function App() {
             <Route exact path="/">
               <PhonesHomePage/>
             </Route>
-            {/* <Route path="/new">
-              <div>New Page</div>
-            </Route> */}
             <Route path="/phone/:id">
               <PhoneDetailsPage/>
             </Route>

@@ -25,6 +25,7 @@ export const PhoneDetailsPage = (props) => {
             <div className="phones-page">
                 <h1 className="phones-title"> {phone.name?.stringValue} </h1>
                 <img src={phone.image?.stringValue} alt="phone photo" />
+                <h1 className="phones-details" >{phone.details?.stringValue}</h1>
             </div>
         )
     } else {
