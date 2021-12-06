@@ -16,6 +16,7 @@ export const PhoneDetailsPage = (props) => {
         const phone = globalState.phones.find(
             (phone) => phone.id.stringValue === id
         );
+        console.log(phone);
         setPhone(phone);
     }, [])
 

@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { PhonesOrderContextProvider } from './context/phonesOrderContext';
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: "assign03-phones.appspot.com",
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
+};
 
 ReactDOM.render(
-  <React.StrictMode>
+  <PhonesOrderContextProvider>
     <App />
-  </React.StrictMode>,
+  </PhonesOrderContextProvider>,
   document.getElementById('root')
 );
 

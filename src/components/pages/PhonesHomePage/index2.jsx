@@ -39,10 +39,8 @@ export const HomePage = () => {
           <h1 className="phones-title"> All Phones </h1>
           <div className="phones-container">
             {
-                phones.map((phone) => (
-                // <PhoneItem key={phone.id.stringValue} name={phone.name.stringValue} image={phone.image.stringValue} color={phone.color.stringValue} brand={phone.brand.stringValue} os={phone.os.stringValue} price={phone.price.stringValue} year={phone.year.stringValue} id={phone.id.stringValue} ></PhoneItem>
-
-                <PhoneItem name={phone.name.stringValue} image={phone.image.stringValue} color={phone.color.stringValue} brand={phone.brand.stringValue} os={phone.os.stringValue} price={phone.price.stringValue} year={phone.year.stringValue} ></PhoneItem>
+                phones.map((phone) => (       
+                <PhoneItem key={phone.id.stringValue} name={phone.name.stringValue} image={phone.image.stringValue} color={phone.color.stringValue} brand={phone.brand.stringValue} os={phone.os.stringValue} price={phone.price.stringValue} year={phone.year.stringValue} id={phone.id.stringValue} ></PhoneItem>
                 ))
             }
           </div>

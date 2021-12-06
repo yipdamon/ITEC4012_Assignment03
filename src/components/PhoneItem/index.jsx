@@ -9,7 +9,6 @@ export const PhoneItem = (props) => {
 
     const globalState = useContext(PhonesOrderContext);
 
-
     return (
         <div className="phone">
             <img className="phone-photo" src={image} alt={name + brand + "photo"} />
