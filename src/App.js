@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import {
@@ -7,7 +6,10 @@ import {
   Route
 } from "react-router-dom";
 
-import { Navbar } from './components/navbar/index'
+import { Navbar } from './components/navbar/index';
+import { HomePage } from './components/pages/HomePage'; 
+import { PhoneDetailsPage } from './components/pages/PhoneDetailsPage';
+
 
 function App() {
   return (
@@ -16,10 +18,13 @@ function App() {
         <Navbar/>
           <Switch>
             <Route exact path="/">
-              <div>Home Page</div>
+              <HomePage/>
             </Route>
             <Route path="/new">
               <div>New Page</div>
+            </Route>
+            <Route path="/phone/:id">
+              <PhoneDetailsPage/>
             </Route>
           </Switch>
       </Router>
