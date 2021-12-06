@@ -19,12 +19,12 @@ export const HomePage = () => {
         try {
             const response = await fetch('https://firestore.googleapis.com/v1/projects/assign03-phones/databases/(default)/documents/phones/');
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             const formattedData = data.documents.map( (item) => {
               return item.fields
             });
         
-            console.log (formattedData);
+            //console.log (formattedData);
             setPhones(formattedData);
             globalState.initializePhones=(formattedData);
         
@@ -40,7 +40,8 @@ export const HomePage = () => {
           <div className="phones-container">
             {
                 phones.map((phone) => (
-                // <PhoneItem key={phone.id.stringValue} name={phone.name.stringValue} image={phone.image.stringValue} color={phone.color.stringValue} brand={phone.brand.stringValue} os={phone.os.stringValue} price={phone.price.stringValue} year={phone.year.stringValue} ></PhoneItem>
+                // <PhoneItem key={phone.id.stringValue} name={phone.name.stringValue} image={phone.image.stringValue} color={phone.color.stringValue} brand={phone.brand.stringValue} os={phone.os.stringValue} price={phone.price.stringValue} year={phone.year.stringValue} id={phone.id.stringValue} ></PhoneItem>
+
                 <PhoneItem name={phone.name.stringValue} image={phone.image.stringValue} color={phone.color.stringValue} brand={phone.brand.stringValue} os={phone.os.stringValue} price={phone.price.stringValue} year={phone.year.stringValue} ></PhoneItem>
                 ))
             }
