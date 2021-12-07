@@ -23,8 +23,6 @@ export const PhoneItem = (props) => {
             <p className="phone-brand"> {brand} </p>
             <p className="phone-year"> {year} </p>
             <p hidden> {details} </p>
-
-            {/* <Button text="Request Phone" type="primary" isDisabled={false} action={addPhoneToCart} /> */}
         
         </div>
     )
